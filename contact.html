@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="Spacex" content="Contact Spacex">
+  <meta name="keywords" content="Spacex, Contact Spacex">
+  <meta name="robots" content="noindex" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://kit.fontawesome.com/ee54249b54.js" crossorigin="anonymous"></script>
+  <title>Contact us</title>
+</head>
+
+<body>
+
+  <!--START NAV-BAR-->
+  <header>
+    <div class="nav-menu">
+      <a href="./index.html"><img src="./img/PngItem_1136511.png" alt="spacex-logo"></a>
+      <div id="navigationLinks">
+        <a href="./launching.html">Launching</a>
+        <a href="./about.html">About us</a>
+        <a href="./contact.html">Contact us</a>
+      </div>
+      <a href="javascript:void(0);" class="burger-icon" onclick="burgerMenu()">
+        <i class="fas fa-bars"></i>
+      </a>
+    </div>
+  </header>
+  <!--END NAV-BAR-->
+
+  <!--START CONTACT FORM AND INFO-->
+  <section>
+    <div class="contact-wrapper">
+      <h1>Contact us</h1>
+      <div class="contact-form-wrapper">
+        <div id="error">
+        </div>
+        <form action="./action.html" id="contactForm" onsubmit="return formValidation();">
+          <div class="input-form">
+            <input type="text" placeholder="Firstname" id="firstname">
+          </div>
+          <div class="input-form">
+            <input type="text" placeholder="Lastname" id="lastname">
+          </div>
+          <div class="input-form">
+            <input type="text" placeholder="Email" id="email">
+          </div>
+          <div class="input-form">
+            <h4>Write your message:</h4>
+            <textarea id="message">
+          </textarea>
+            <div class="send-button">
+              <input type="submit">
+            </div>
+        </form>
+      </div>
+    </div>
+    <div class="contact-info">
+
+    </div>
+  </section>
+  <!--END CONTACT FORM-->
+
+  <!--START FOOTER-->
+  <footer>
+    <p>©copyright Spacex - microsite by camilla reppen</p>
+    <p>Credit:
+      <a href="https://api.spacexdata.com/v3/info">SpaceX</a>
+      <a href="https://api.spacexdata.com/v3/launches">Launching</a>
+      <a href="https://api.spacexdata.com/v3/info">Contact</a>
+      <a href="https://api.spacexdata.com/v3/history">History</a>
+    </p>
+  </footer>
+  <!--END FOOTER-->
+
+  <script src="./js/script.js"></script>
+  <script src="../js/contact.js"></script>
+</body>
+
+</html>

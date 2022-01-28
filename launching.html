@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="Launching" content="Launching site for Spacex">
+  <meta name="keywords" content="Launching, Launching time, Spacex">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ee54249b54.js" crossorigin="anonymous"></script>
+  <title>Launching</title>
+</head>
+
+<body onload="loaderFunction()">
+
+  <!--START NAV-BAR-->
+  <header>
+    <div class="nav-menu">
+      <a href="./index.html"><img src="./img/PngItem_1136511.png" alt="spacex-logo"></a>
+      <div id="navigationLinks">
+        <a href="./launching.html">Launching</a>
+        <a href="./about.html">About us</a>
+        <a href="./contact.html">Contact us</a>
+      </div>
+      <a href="javascript:void(0);" class="burger-icon" onclick="burgerMenu()">
+        <i class="fas fa-bars"></i>
+      </a>
+    </div>
+  </header>
+  <!--END NAV-BAR-->
+
+  <!--START LOADER-->
+  <div id="showLoader">
+    <img src="./img/ajax-loader.gif">
+  </div>
+  <!--END LOADER-->
+
+  <!--START LAUNCHING CONTAINER-->
+  <section style="display:none;" id="showLaunch">
+    <div class="launching-wrapper">
+      <div class="launching-text-wrap">
+        <div class="launching-api"></div>
+        <div class="countdown-wrapper">
+          <h5><span>Countdown</span><br> to launch: </h5>
+          <p id="launchingCountDown"></p>
+          <li>Days</li>
+          <li>Hrs</li>
+          <li>Min</li>
+          <li>Sec</li>
+        </div>
+      </div>
+      <div class="launching-image">
+        <img src="./img/Untitled-1.png" alt="launching rocket, credit: Official SpaceX Photos"
+          title="https://flic.kr/p/24hJt5P">
+      </div>
+    </div>
+  </section>
+  <!--END LAUNCHING CONTAINER-->
+
+  <!--START FOOTER-->
+  <footer>
+    <p>©copyright Spacex - microsite by camilla reppen</p>
+    <p>Credit:
+      <a href="https://api.spacexdata.com/v3/info">SpaceX</a>
+      <a href="https://api.spacexdata.com/v3/launches">Launching</a>
+      <a href="https://api.spacexdata.com/v3/info">Contact</a>
+      <a href="https://api.spacexdata.com/v3/history">History</a>
+    </p>
+  </footer>
+  <!--END FOOTER-->
+
+  <script src="./js/script.js"></script>
+  <script src="./js/launching.js"></script>
+  <script src="./js/countdown.js"></script>
+
+</body>
+
+</html>
